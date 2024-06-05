@@ -8,7 +8,7 @@ Key Concepts: Basic syntax, fmt package, main function.
 Create a command-line calculator that can perform basic arithmetic operations like addition, subtraction, multiplication, and division.
 Key Concepts: User input, conditional statements, functions.
 
-## Todo List CLI: ✏️
+## Todo List CLI: ✅
 
 A command-line interface (CLI) application to manage a todo list. Users can add, view, and delete tasks.
 Key Concepts: Slices, struct, basic CRUD operations.
@@ -97,3 +97,7 @@ Key Concepts: Random number generation, string manipulation.
 
 A command-line tool to convert between different units (e.g., length, weight, temperature).
 Key Concepts: User input, basic arithmetic operations.
+
+# Resources
+
+[Go cheatsheet for using printf](https://yourbasic.org/golang/fmt-printf-reference-cheat-sheet/#default)
