@@ -13,6 +13,29 @@ Key Concepts: User input, conditional statements, functions.
 A command-line interface (CLI) application to manage a todo list. Users can add, view, and delete tasks.
 Key Concepts: Slices, struct, basic CRUD operations.
 
+```go
+// Para que los inputs str x consola puedan usar espacio
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "os"
+)
+
+func main() {
+    var strInput string
+    fmt.Println("Enter a string ")
+    scanner := bufio.NewScanner(os.Stdin)
+
+    if scanner.Scan() {
+        strInput = scanner.Text()
+    }
+
+    fmt.Println(strInput)
+}
+```
+
 ## Guess the Number:
 
 A game where the program randomly selects a number between 1 and 100, and the user has to guess it. The program provides hints if the guess is too high or too low.
@@ -101,3 +124,5 @@ Key Concepts: User input, basic arithmetic operations.
 # Resources
 
 [Go cheatsheet for using printf](https://yourbasic.org/golang/fmt-printf-reference-cheat-sheet/#default)
+[Go debugging with VSCode](https://www.digitalocean.com/community/tutorials/debugging-go-code-with-visual-studio-code)
+[Go debugging with VSCode 2](https://github.com/golang/vscode-go/blob/master/docs/debugging.md)
