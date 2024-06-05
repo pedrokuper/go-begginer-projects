@@ -123,6 +123,10 @@ Key Concepts: User input, basic arithmetic operations.
 
 # Resources
 
+[General Resources About Go](https://yourbasic.org/golang/)
+
 [Go cheatsheet for using printf](https://yourbasic.org/golang/fmt-printf-reference-cheat-sheet/#default)
+
 [Go debugging with VSCode](https://www.digitalocean.com/community/tutorials/debugging-go-code-with-visual-studio-code)
+
 [Go debugging with VSCode 2](https://github.com/golang/vscode-go/blob/master/docs/debugging.md)
