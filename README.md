@@ -1,14 +1,14 @@
-## Hello World Program: ✅
+## Hello World Program: ✅ [src](https://github.com/pedrokuper/go-begginer-projects/tree/main/hello-world)
 
 A simple program that prints "Hello, World!" to the console.
 Key Concepts: Basic syntax, fmt package, main function.
 
-## Simple Calculator:✅
+## Simple Calculator:✅ [src](https://github.com/pedrokuper/go-begginer-projects/blob/main/calculator/main.go)
 
 Create a command-line calculator that can perform basic arithmetic operations like addition, subtraction, multiplication, and division.
 Key Concepts: User input, conditional statements, functions.
 
-## Todo List CLI: ✅
+## Todo List CLI: ✅ [src](https://github.com/pedrokuper/go-begginer-projects/blob/main/todolist-cli/main.go)
 
 A command-line interface (CLI) application to manage a todo list. Users can add, view, and delete tasks.
 Key Concepts: Slices, struct, basic CRUD operations.

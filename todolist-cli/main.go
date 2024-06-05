@@ -6,22 +6,6 @@ import (
 	"os"
 )
 
-// ## Todo List CLI:
-
-// A command-line interface (CLI) application to manage a todo list. Users can add, view, and delete tasks.
-// Key Concepts: Slices, struct, basic CRUD operations.
-
-/*
-Inicializa el programa:
-
-2. Opciones posibles:
-
-	4. borrar un todo
-		a. recibir un numerico
-		b. buscarlo
-		c. eliminarlo
-*/
-
 type Todo struct {
 	id           int
 	title        string
