@@ -36,7 +36,7 @@ func main() {
 }
 ```
 
-## Guess the Number:
+## Guess the Number: [src](https://github.com/pedrokuper/go-begginer-projects/tree/main/guess-the-number)
 
 A game where the program randomly selects a number between 1 and 100, and the user has to guess it. The program provides hints if the guess is too high or too low.
 Key Concepts: Random number generation, loops, user input.
