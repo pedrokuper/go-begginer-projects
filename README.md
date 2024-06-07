@@ -41,6 +41,13 @@ func main() {
 A game where the program randomly selects a number between 1 and 100, and the user has to guess it. The program provides hints if the guess is too high or too low.
 Key Concepts: Random number generation, loops, user input.
 
+```go
+//To generate random numbers
+func randRange(min, max int) int {
+	return rand.IntN(max-min) + min
+}
+```
+
 ## File I/O Operations:
 
 A program to read from and write to files. For instance, read a text file and count the number of words.

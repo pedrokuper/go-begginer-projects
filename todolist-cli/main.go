@@ -17,6 +17,7 @@ var todos = make([]Todo, 0) //Slice de todos
 func main() {
 	var opt string
 	idx := 1
+  fmt.Println("test")
 	for opt != "0" {
 		initializeMenu()
 		fmt.Scan(&opt)
