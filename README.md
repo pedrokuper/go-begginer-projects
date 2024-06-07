@@ -86,7 +86,7 @@ Key Concepts: File handling, string manipulation, and text parsing.
 ## Contact Book CLI:
 
 A command-line application to manage contacts with features to add, view, update, and delete contacts.
-Key Concepts: CRUD operations, struct, file storage.
+Key Concepts: CRUD operations, struct, file storage. SQLITE & Some CLI Framework
 
 ## Image Resizer:
 
