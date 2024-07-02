@@ -1,29 +1,31 @@
 package main
 
 import (
-	"begginer/url-shortener/api"
 	"fmt"
 	"net/http"
+
+	"github.com/pkuper/urlshortener/shortenurl"
 )
 
-type Url struct {
-	Url string
-}
-
 func main() {
-	server := http.NewServeMux()
-	server.HandleFunc("/url", handleRoot)
+	db, err := shortenurl.Connect()
 
-	fmt.Println("Server listening on port 8000")
-	err := http.ListenAndServe(":8000", server)
 	if err != nil {
-		fmt.Println("Error opening the server")
+		panic("failed to connect database")
 	}
-}
 
-func handleRoot(w http.ResponseWriter, r *http.Request) {
-	if r.URL.Path == "/url" {
-		api.Post(w, r)
-		// w.Write([]byte("url shortener!"))
-	}
+	db.AutoMigrate(&shortenurl.URL{})
+
+	http.HandleFunc("/shorten", func(w http.ResponseWriter, r *http.Request) {
+		original := r.FormValue("url")
+		shortened := shortenurl.ShortenURL(original)
+		fmt.Println(shortened)
+
+		db.Create(&shortenurl.URL{Original: original, Shortened: shortened})
+	})
+
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		shortenurl.RedirectURL(db, w, r)
+	})
+	http.ListenAndServe(":8080", nil)
 }
